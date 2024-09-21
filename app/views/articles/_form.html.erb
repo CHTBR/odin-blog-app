@@ -8,8 +8,8 @@
   </div>
 
   <div>
-    <%= form.label :body %>
-    <%= form.text_field :body %>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
     <% @article.errors.full_messages_for(:body).each do |err_message| %>
       <div><%= err_message %></div>
     <% end %>
